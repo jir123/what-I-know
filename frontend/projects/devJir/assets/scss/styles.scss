@@ -1,0 +1,294 @@
+
+
+/*-------Include elements----------*/
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
+/*-------Variables-----------------*/
+$theme-color: #21E0BD;
+$theme-font-color:#4d4d4d;
+$theme-white-color:#fff;
+$them-font-family: "PT Sans", sans-serif;
+$theme-second-font-family:"Source Sans Pro",sans-serif;
+
+//mixin 
+
+@mixin fullscreen-background($url){
+  background:linear-gradient(rgba($theme-color,0.4), rgba($theme-color,0.8)),
+  url($url)  center center no-repeat;
+  background-size: cover;
+  height:670px;
+  width: 100%;
+}
+
+/*-------Global elements-----------*/
+
+body {
+    // padding-top: 5rem;
+    font-family: $them-font-family
+  }
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $them-font-family;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 300;
+}
+
+
+p {
+  font-family: $theme-second-font-family;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0;
+  color: $theme-font-color;
+}
+
+a {
+  color:$theme-color;
+  &:hover {
+    color:lighten($theme-color, 20%);
+    text-decoration: underline;
+  }
+}
+
+.btn {
+  font-family: $them-font-family;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 3px;
+  color: $theme-white-color;
+  background: $theme-color;
+  border-radius: 0;
+  border: none;
+  padding: 5px 20px 5px 20px;
+  box-shadow: 0 2px 6px 1px rgba(20,20,20,0.48);
+  transition:all 0.3s;
+  -webkit-animation: .5s typekitLoad ease-in-out;
+  animation: .5s typekitLoad ease-in-out;
+  &:hover {
+    color:$theme-color;
+    background: $theme-font-color;
+  }
+  
+}
+::selection {
+  background: $theme-color;
+}
+
+.section {
+  margin-top: 40px;
+}
+/*------------- Hero section---------------*/
+#hero {
+  padding-top: 5rem;
+  background: url('../images/subscription.jpg') no-repeat;
+  background-size: cover;
+  .container-fluid{
+    padding:0;
+  }
+  .card-properties {
+    // padding-bottom: 50px;
+    ul{
+      list-style-type: none;
+      margin:0;
+      padding:0;
+      overflow: hidden;
+      li {
+        float: left;
+        width:20%;
+        height:400px;
+        background:url('../images/subscription.jpg');
+        background-size: cover;
+        border-style: solid solid solid solid;
+        border-color: #fff #ffffff #fff #ffffff;
+        border-width: 1px 1px 1px 1px;
+        .card-box {
+          height:360px;
+          margin:20px;
+          &:hover {
+            border:2px solid $theme-white-color;
+            
+          }
+        }
+      }
+
+    }
+  }
+}
+/*------------- About section---------------*/
+#about {
+  padding-top: 50px;
+  img {
+    box-shadow: -50px 50px 0px 0px rgba(224, 224, 224,0.75);
+  }
+  .about-left-side {
+    display: inline-block;
+    z-index:-1;
+  }
+  .about-right-side {
+    display: inline-block;
+    position: relative;
+    top: 65px;
+    right: 65px;
+    background: $theme-white-color;
+    .about-text-box {
+     padding: 40px 55px 25px 100px;
+      border-right: 1px solid $theme-font-color;
+    }
+    
+  }
+}
+/*------------- Subscription section--------*/
+#subscription {
+  margin-top:150px;
+  padding: 225px 0 200px;
+ background: url('../images/subscription.jpg') no-repeat;
+ color: $theme-white-color;
+ p{
+   font-size: 30px;
+ }
+}
+/*------------- Services section--------*/
+#services {
+  .col-md-6 {
+    padding:30px 40px;
+    img {
+      margin-bottom:30px;
+    }
+    h3 {
+      font-size: 26px;
+    }
+  }
+}
+/*------------- Testimonial section--------*/
+#testimonial {
+  h3 {
+    font-size: 60px;
+    font-weight: 300;
+    text-transform: lowercase;
+  }
+  .slide-text {
+    position: relative;
+   @include fullscreen-background('../images/feature-2.jpg');
+   #carouselExampleControls {
+     position: absolute;
+    top:50%;
+    left:0%;
+    transform: translate(-0%,-50%);
+    .carousel-item{
+      p{
+        color:$theme-white-color;
+        padding:0 30px;
+      }
+      .text-muted {
+        font-size: 28px;
+        color:$theme-white-color!important;
+      }
+      
+    }
+    
+   }
+    
+  }
+  .social-btn {
+    margin-top:60px;
+    a {
+      margin: 60px 0;
+    }
+  }
+}
+/*------------- Contact-footer section-----*/
+#contact-footer {
+  .list-group-item {
+    border: 0;
+    text-align: left;
+    padding:6px 0;
+    padding-left: 0;
+    a {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 30px;
+      letter-spacing: 0;
+    }
+  }
+}
+
+/*------------- Contact section-----------*/
+#contact {
+  background:#222222;
+  padding:80px 0;
+  h2,h3,p {
+    color: $theme-white-color;
+  }
+  h2 {
+    text-transform: none;
+    letter-spacing: 1px;
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 400;
+  }
+
+  form {
+    input, textarea {
+      border:$theme-font-color;
+      border-radius: 0;
+      background-color: $theme-font-color;
+      color:$theme-white-color;
+      font-size: 20px;
+    }
+    textarea {
+      height: 130px;
+      color:$theme-white-color!important;
+      font-size: 20px;
+    }
+    input::placeholder {
+      color: $theme-white-color;
+      font-size: 20px;
+    }
+    ::placeholder {
+      color: $theme-white-color;
+      opacity: 1; /* Firefox */
+    }
+    
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+     color: $theme-white-color;
+    }
+    
+    ::-ms-input-placeholder { /* Microsoft Edge */
+     color: $theme-white-color;
+    }
+    .form-control:focus {
+      box-shadow: none;
+  }
+  }
+}
+/*------------- footer section-----------*/
+#footer {
+  background:$theme-color;
+  .copy-right {
+    color:$theme-white-color;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-align: left;
+  }
+  .scroll-top {
+    color:$theme-font-color;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-align: right;
+    &:hover {
+      color: $theme-white-color;
+    }
+  }
+}

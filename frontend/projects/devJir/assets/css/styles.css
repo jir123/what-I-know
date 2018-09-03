@@ -1,0 +1,217 @@
+/*-------Include elements----------*/
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700");
+/*-------Variables-----------------*/
+/*-------Global elements-----------*/
+body {
+  font-family: "PT Sans", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Sans", sans-serif; }
+
+h2 {
+  font-size: 60px;
+  font-weight: 300; }
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0;
+  color: #4d4d4d; }
+
+a {
+  color: #21E0BD; }
+  a:hover {
+    color: #7becd8;
+    text-decoration: underline; }
+
+.btn {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 3px;
+  color: #fff;
+  background: #21E0BD;
+  border-radius: 0;
+  border: none;
+  padding: 5px 20px 5px 20px;
+  box-shadow: 0 2px 6px 1px rgba(20, 20, 20, 0.48);
+  transition: all 0.3s;
+  -webkit-animation: .5s typekitLoad ease-in-out;
+  animation: .5s typekitLoad ease-in-out; }
+  .btn:hover {
+    color: #21E0BD;
+    background: #4d4d4d; }
+
+::selection {
+  background: #21E0BD; }
+
+.section {
+  margin-top: 40px; }
+
+/*------------- Hero section---------------*/
+#hero {
+  padding-top: 5rem;
+  background: url("../images/subscription.jpg") no-repeat;
+  background-size: cover; }
+  #hero .container-fluid {
+    padding: 0; }
+  #hero .card-properties ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; }
+    #hero .card-properties ul li {
+      float: left;
+      width: 20%;
+      height: 400px;
+      background: url("../images/subscription.jpg");
+      background-size: cover;
+      border-style: solid solid solid solid;
+      border-color: #fff #ffffff #fff #ffffff;
+      border-width: 1px 1px 1px 1px; }
+      #hero .card-properties ul li .card-box {
+        height: 360px;
+        margin: 20px; }
+        #hero .card-properties ul li .card-box:hover {
+          border: 2px solid #fff; }
+
+/*------------- About section---------------*/
+#about {
+  padding-top: 50px; }
+  #about img {
+    box-shadow: -50px 50px 0px 0px rgba(224, 224, 224, 0.75); }
+  #about .about-left-side {
+    display: inline-block;
+    z-index: -1; }
+  #about .about-right-side {
+    display: inline-block;
+    position: relative;
+    top: 65px;
+    right: 65px;
+    background: #fff; }
+    #about .about-right-side .about-text-box {
+      padding: 40px 55px 25px 100px;
+      border-right: 1px solid #4d4d4d; }
+
+/*------------- Subscription section--------*/
+#subscription {
+  margin-top: 150px;
+  padding: 225px 0 200px;
+  background: url("../images/subscription.jpg") no-repeat;
+  color: #fff; }
+  #subscription p {
+    font-size: 30px; }
+
+/*------------- Services section--------*/
+#services .col-md-6 {
+  padding: 30px 40px; }
+  #services .col-md-6 img {
+    margin-bottom: 30px; }
+  #services .col-md-6 h3 {
+    font-size: 26px; }
+
+/*------------- Testimonial section--------*/
+#testimonial h3 {
+  font-size: 60px;
+  font-weight: 300;
+  text-transform: lowercase; }
+#testimonial .slide-text {
+  position: relative;
+  background: linear-gradient(rgba(33, 224, 189, 0.4), rgba(33, 224, 189, 0.8)), url("../images/feature-2.jpg") center center no-repeat;
+  background-size: cover;
+  height: 670px;
+  width: 100%; }
+  #testimonial .slide-text #carouselExampleControls {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%); }
+    #testimonial .slide-text #carouselExampleControls .carousel-item p {
+      color: #fff;
+      padding: 0 30px; }
+    #testimonial .slide-text #carouselExampleControls .carousel-item .text-muted {
+      font-size: 28px;
+      color: #fff !important; }
+#testimonial .social-btn {
+  margin-top: 60px; }
+  #testimonial .social-btn a {
+    margin: 60px 0; }
+
+/*------------- Contact-footer section-----*/
+#contact-footer .list-group-item {
+  border: 0;
+  text-align: left;
+  padding: 6px 0;
+  padding-left: 0; }
+  #contact-footer .list-group-item a {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0; }
+
+/*------------- Contact section-----------*/
+#contact {
+  background: #222222;
+  padding: 80px 0; }
+  #contact h2, #contact h3, #contact p {
+    color: #fff; }
+  #contact h2 {
+    text-transform: none;
+    letter-spacing: 1px;
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 400; }
+  #contact form input, #contact form textarea {
+    border: #4d4d4d;
+    border-radius: 0;
+    background-color: #4d4d4d;
+    color: #fff;
+    font-size: 20px; }
+  #contact form textarea {
+    height: 130px;
+    color: #fff !important;
+    font-size: 20px; }
+  #contact form input::placeholder {
+    color: #fff;
+    font-size: 20px; }
+  #contact form ::placeholder {
+    color: #fff;
+    opacity: 1;
+    /* Firefox */ }
+  #contact form :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #fff; }
+  #contact form ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #fff; }
+  #contact form .form-control:focus {
+    box-shadow: none; }
+
+/*------------- footer section-----------*/
+#footer {
+  background: #21E0BD; }
+  #footer .copy-right {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-align: left; }
+  #footer .scroll-top {
+    color: #4d4d4d;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-align: right; }
+    #footer .scroll-top:hover {
+      color: #fff; }
+
+/*# sourceMappingURL=styles.css.map */
