@@ -98,29 +98,57 @@ a {
 /*------------- Hero section---------------*/
 #hero {
   padding-top: 5rem;
-  background: url("../images/subscription.jpg") no-repeat;
-  background-size: cover; }
-  #hero .container-fluid {
-    padding: 0; }
-  #hero .card-properties ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden; }
-    #hero .card-properties ul li {
-      float: left;
-      width: 20%;
+  background: url("../images/hero.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 50vw; }
+  #hero .hero-text {
+    color: #fff; }
+    #hero .hero-text h1 {
+      line-height: 65px;
+      letter-spacing: 15px;
+      font-size: 72px;
+      text-transform: uppercase; }
+    #hero .hero-text h2 {
+      font-size: 33px;
+      font-weight: bold;
+      color: #e8d8d8;
+      padding: 25px; }
+    #hero .hero-text p {
+      padding-top: 25px;
+      font-size: 25px;
+      color: #fff !important; }
+
+#card-pricing .container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+  #card-pricing .container-fluid .card {
+    height: 400px;
+    cursor: pointer;
+    border: 1px solid #fff; }
+    #card-pricing .container-fluid .card .card-img-top {
       height: 400px;
-      background: url("../images/subscription.jpg");
-      background-size: cover;
-      border-style: solid solid solid solid;
-      border-color: #fff #ffffff #fff #ffffff;
-      border-width: 1px 1px 1px 1px; }
-      #hero .card-properties ul li .card-box {
-        height: 360px;
-        margin: 20px; }
-        #hero .card-properties ul li .card-box:hover {
-          border: 2px solid #fff; }
+      border-radius: 0; }
+    #card-pricing .container-fluid .card .card-img-overlay {
+      margin: 20px; }
+      #card-pricing .container-fluid .card .card-img-overlay:hover {
+        border: 3px solid #fff; }
+      #card-pricing .container-fluid .card .card-img-overlay h5 {
+        text-transform: uppercase;
+        font-weight: bold; }
+      #card-pricing .container-fluid .card .card-img-overlay .btn {
+        border: 2px solid #fff;
+        background: transparent;
+        box-shadow: none; }
+        #card-pricing .container-fluid .card .card-img-overlay .btn:hover {
+          color: #4d4d4d;
+          background: #fff; }
+      #card-pricing .container-fluid .card .card-img-overlay .text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%); }
 
 /*------------- About section---------------*/
 #about {
@@ -156,6 +184,18 @@ a {
     margin-bottom: 30px; }
   #services .col-md-6 h3 {
     font-size: 26px; }
+
+/*------------- Gallery section--------*/
+#gallery .container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+#gallery .img-thumbnail {
+  padding: .25rem;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0;
+  max-width: 100%;
+  height: auto; }
 
 /*------------- Testimonial section--------*/
 #testimonial h3 {
