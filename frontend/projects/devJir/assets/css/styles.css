@@ -96,6 +96,12 @@ a {
   font-size: 30px; }
 
 /*------------- Hero section---------------*/
+nav {
+  padding-left: 50px; }
+  nav .nav-item {
+    padding-right: 10px;
+    padding-left: 10px; }
+
 #hero {
   padding-top: 5rem;
   background: url("../images/hero.jpg") no-repeat;
